@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    main: './src/index.jsx',
+    main: './src/index.tsx',
   },
   output: {
     filename: '[name].bundle.js',
@@ -32,7 +32,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.jsx', '.js'],
+    extensions: ['.jsx', '.js', '.tsx', '.ts'],
   },
   plugins: [
     new HtmlWebpackPlugin({
