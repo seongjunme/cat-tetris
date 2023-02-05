@@ -32,6 +32,9 @@ module.exports = {
     ],
   },
   resolve: {
+    alias: {
+      '@': `${__dirname}/src`,
+    },
     extensions: ['.jsx', '.js', '.tsx', '.ts'],
   },
   plugins: [
